@@ -10,6 +10,8 @@ __Device needs to be rooted and have wireless adb enabled__
 - fbconverter - https://github.com/tomneko/fbconverter
 
 ## Some instructions:
+Set the `device_ip` variable in the script to the device ip for wireless adb connection.
+
 Place your books into `Books` directory and run `sync.sh`
 
 The script will check the files in the `Books` directory, if it finds files with fb2 extension - it will convert it to epub and move the original files to `.original_files` folder. Then it will connect to the book through wireless adb, sync the `Books` directory and execute `UsbStorageActivity` on the device twice, to force it to update it's library
