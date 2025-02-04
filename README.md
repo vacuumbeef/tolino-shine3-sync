@@ -2,7 +2,7 @@
 
 Shell script for syncing a books directory with Tolino Shine 3 e-Reader.
 
-__Device needs to be rooted and has wireless adb enabled__
+__Device needs to be rooted and have wireless adb enabled__
 
 ### Dependencies
 - adb
