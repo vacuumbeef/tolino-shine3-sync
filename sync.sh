@@ -8,6 +8,7 @@
 
 books_dir=./Books
 orig_files_dir=./.original_files
+device_ip=192.168.1.142
 
 mkdir -p $books_dir $orig_files_dir
 
@@ -40,7 +41,7 @@ do
 	esac
 done
 
-adb connect 192.168.1.142
+adb connect $device_ip
 sync
 force_update_library
-adb disconnect 192.168.1.142
+adb disconnect $device_ip
